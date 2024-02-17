@@ -57,3 +57,4 @@ Este comando irá se inscrever no tópico "data/mics6814" que está sendo execut
 
 Abaixo temos um vídeo exemplificando o funcionamento do projeto: 
 
+[Gravação de tela de 17-02-2024 14:46:23.webm](https://github.com/cmtabr/M9T2-ATIVIDADES-CAIO/assets/99201276/568a48fa-0c7d-4c16-8384-db9a3e36d414)
