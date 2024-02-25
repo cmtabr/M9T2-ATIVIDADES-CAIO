@@ -12,7 +12,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: '../'
+        working-directory: './'
 
     steps:
       - name: Checkout repository
@@ -23,7 +23,7 @@ jobs:
         with:
           version: '1.6'
           ports: '1891:1891'
-          config: ../mosquitto.conf
+          config: ${{ github.workspace }}/.github/workflows/mosquitto.conf
           container-name: 'mqtt'
 
   test:
