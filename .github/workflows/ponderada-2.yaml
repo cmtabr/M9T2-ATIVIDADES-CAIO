@@ -15,14 +15,14 @@ jobs:
         working-directory: './'
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
+      - name: Git repository
+        uses: actions/checkout@v2
+  
       - name: Start Mosquitto
         uses: namoshek/mosquitto-github-action@v1
         with:
           version: '1.6'
-          ports: '1891:1891'
+          ports: '1891:1883 8883:8883'
           config: ${{ github.workspace }}/.github/workflows/mosquitto.conf
           container-name: 'mqtt'
 
