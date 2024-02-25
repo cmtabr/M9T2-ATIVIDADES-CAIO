@@ -7,27 +7,7 @@ on:
     
 
 jobs:
-  create-broker:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
-        working-directory: './'
-
-    steps:
-      - name: Git repository
-        uses: actions/checkout@v2
-  
-      - name: Start Mosquitto
-        uses: namoshek/mosquitto-github-action@v1
-        with:
-          version: '1.6'
-          ports: '1891:1883 8883:8883'
-          config: ${{ github.workspace }}/.github/workflows/mosquitto.conf
-          container-name: 'mqtt'
-
   test:
-    needs: create-broker
     runs-on: ubuntu-latest
     strategy: 
       matrix:

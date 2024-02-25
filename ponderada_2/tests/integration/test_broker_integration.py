@@ -5,8 +5,8 @@ from mypkg.broker.subscriber import Subscriber
 import time
 
 
-BROKER = 'localhost'
-PORT = 1891
+BROKER = 'broker.hivemq.com'
+PORT = 1883
 QOS = 1
 
 
