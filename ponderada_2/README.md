@@ -322,4 +322,5 @@ Este teste assegura a correta interação entre os componentes de publicação e
 
 ## Validação
 
-[m9-p2.webm](https://github.com/cmtabr/M9T2-ATIVIDADES-CAIO/assets/99201276/9512f912-124e-4610-8b86-cb8df98148bd)
+
+[m9-p2.webm](https://github.com/cmtabr/M9T2-ATIVIDADES-CAIO/assets/99201276/cfd37385-d26b-4121-9c7f-ecc568224c79)
