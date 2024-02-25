@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - 'main'
-    paths:
-      - 'ponderada_2/mypkg/**'
+    
 
 jobs:
   create-broker:
