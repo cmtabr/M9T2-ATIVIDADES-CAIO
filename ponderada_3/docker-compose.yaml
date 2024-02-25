@@ -1,15 +1,15 @@
 version: "3.7"
 services:
   p3:
-    image: eclipse-mosquitto
+    image: eclipse-mosquitto:latest
     container_name: p3
     ports:
       - "1891:1883" 
       - "9001:9001" 
     volumes:
-      - ./config:/mosquitto/config:rw
-      - ./data:/mosquitto/data:rw
-      - ./log:/mosquitto/log:rw
+      - ./config:/mosquitto/config:ro
+      - ./data:/mosquitto/data:ro
+      - ./log:/mosquitto/log:ro
     restart: unless-stopped
     deploy:
       resources:
