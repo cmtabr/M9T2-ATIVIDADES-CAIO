@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
     paths:
-      - './ponderada_2/mypkg/**'
+      - 'ponderada_2/mypkg/**'
 
 jobs:
   test:
@@ -17,7 +17,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: './ponderada_2/mypkg/'
+        working-directory: './ponderada_2/mypkg'
 
     steps:
       - uses: actions/checkout@v4
