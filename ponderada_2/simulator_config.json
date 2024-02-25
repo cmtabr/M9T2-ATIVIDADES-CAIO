@@ -1,0 +1,7 @@
+{
+    "mqtt": {
+        "broker": "localhost",
+        "port": 1891,
+        "qos": 1
+    }
+}
