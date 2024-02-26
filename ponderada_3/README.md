@@ -1,11 +1,12 @@
-# Ponderada 1 
+# Ponderada 3
 ## Informações do Aluno  
 Aluno | Curso | Módulo | Turma
 :---: | :---: | :---: | :---:
 Caio Martins de Abreu | Engenharia da Computação | 9 | 2
+Paulo Evangelista | Engenharia da Computação | 9 | 2
 
 ## Descrição
-Avaliar a tríade CIA em uma conexão com um broker MQTT.
+Avaliar a **tríade CIA (confidentiality, integrity and availability)** em uma conexão com um broker MQTT, descobrindo possíveis vulnerabilidades e medidas adequadas.
 
 ## Perguntas - Roteiro
 1. O que acontece se você utilizar o mesmo ClientID em outra máquina ou sessão do browser? Algum pilar do CIA Triad é violado com isso?
@@ -44,7 +45,7 @@ networks:
     name: p3-network
 ```
 
-**R.:** Sim, o pilar de disponibilidade, pois o container pode ser facilmente derrubado por falta de recursos em uma eventual sobrecarga de mensagens. 
+**R.:** Sim, o pilar de disponibilidade, pois o container pode ser facilmente derrubado por falta de recursos em uma eventual sobrecarga de mensagens. Além disso, a conexão sem TLS prejudica o pilar de confidencialidade, abrindo o sistema para ataques baseados em MitM, spoofing e eavesdropping.
 
 3. Já tentou fazer o Subscribe no tópico #? (sim, apenas a hashtag). O que acontece?
 
@@ -61,7 +62,7 @@ networks:
 
 ### 1. Como você faria para violar a confidencialidade?
 
-**R.:** Para violar a confidencialidade, eu poderia me inscrever em tópicos que transitam informações sensíveis, uma vez que o broker não possui uma lista de controle de acesso (ACL) para limitar o acesso a tópicos específicos. Uma vez que obtivesse quaisquer credenciais de acesso, poderia publicar e ler mensagens em tópicos que não deveria ter acesso.
+**R.:** Para violar a confidencialidade, eu poderia me inscrever em tópicos que transitam informações sensíveis, uma vez que o broker não possui uma lista de controle de acesso (ACL) para limitar o acesso a tópicos específicos. Uma vez que obtivesse quaisquer credenciais de acesso, poderia publicar e ler mensagens em tópicos que não deveria ter acesso. Além disso, a conexão sem TLS pode ser facilmente interceptada, expondo todos os dados em tráfego, e ainda utilizada para comprometer outras partes do sistema.
 
 > **Exemplo:**
 >
@@ -85,6 +86,12 @@ Tendo esse quesito em vista, um contramedida é alterar as configurações do mo
 
 Além disso seria interessante criar perfis de segurança para o container, utilizando o SELinux ou AppArmor, para limitar o acesso do container ao host.
 
+---
 
-### Demontração
-Para a demonstração havia elaborado um pequeno teste de carga utilizando threads em Python para publicar mensagens em um tópico específico, porém, ao tentar realizar o teste, não obtive sucesso, 
+## Conclusão
+
+Nesse estudo fica clara a essencialidade de medidas de segurança rigorosas. A análise revela vulnerabilidades críticas, como o uso compartilhado de ClientIDs, configurações inadequadas de recursos, subscrições em tópicos wildcard sem restrições e a permissividade de conexões anônimas, que comprometem a confidencialidade, integridade e disponibilidade dos dados.
+
+Para mitigar esses riscos, recomendamos estratégias específicas, incluindo a implementação de listas de controle de acesso (ACL), a otimização das configurações de recursos para prevenir sobrecargas, o uso cauteloso de wildcards em subscrições e a exigência de autenticação e autorização robustas. Além disso, enfatizamos a importância de revisões de segurança contínuas e a aplicação de práticas de segurança atualizadas para proteger as comunicações via broker MQTT contra ameaças emergentes.
+
+Este trabalho serve como um lembrete crítico da necessidade de implementação de medidas de segurança avançadas em sistemas de comunicação sensíveis, **principalmente no contexto do nosso projeto e stakeholders**, garantindo assim a proteção integral dos dados transmitidos.
