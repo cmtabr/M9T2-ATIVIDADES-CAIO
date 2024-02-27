@@ -1,4 +1,4 @@
-name: Ponderada 2 - Automatização de Testes
+name: Ponderada 4 - Automatização de Testes Unitários e de Integração
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
       - 'ponderada_4/**'
 
 jobs:
-  test:
+  Integration-Tests:
     runs-on: ubuntu-latest
     strategy: 
       matrix:
@@ -31,5 +31,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install tox tox-gh-actions
-      - name: Unity and Integration Tests
-        run: tox
+      - name: Tox run 
+        env:
+          BROKER: ${{ P4_SECRETS.BROKER }}
+          PORT: ${{ P4_SECRETS.PORT }}
+          USER: ${{ P4_SECRETS.USER }}
+          PASSWORD: ${{ P4_SECRETS.PASSWORD }}
+          TOPIC: ${{ P4_SECRETS.TOPIC }}
+          CLIENT_ID: ${{ P4_SECRETS.CLIENT_ID }}
+          QOS: ${{ P4_SECRETS.QOS }}
+        run: tox run parallel
