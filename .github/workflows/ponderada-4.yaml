@@ -34,13 +34,13 @@ jobs:
       - name: Temp .env file
         run: |
           touch .env
-          echo BROKER=${{ secrets.P4_SECRETS.BROKER }} >> .env
-          echo PORT=${{ secrets.P4_SECRETS.PORT }} >> .env
-          echo TOPIC=${{ secrets.P4_SECRETS.TOPIC }} >> .env
-          echo QOS=${{ secrets.P4_SECRETS.QOS }} >> .env
-          echo USER=${{ secrets.P4_SECRETS.PROFILE }} >> .env
-          echo PASSWORD=${{ secrets.P4_SECRETS.PASSWORD }} >> .env
-          echo CLIENT_ID=${{ secrets.P4_SECRETS.CLIENT_ID }} >> .env
+          echo BROKER=${{ secrets.P4.BROKER }} >> .env
+          echo PORT=${{ secrets.P4.PORT }} >> .env
+          echo TOPIC=${{ secrets.P4.TOPIC }} >> .env
+          echo QOS=${{ secrets.P4.QOS }} >> .env
+          echo USER=${{ secrets.P4.PROFILE }} >> .env
+          echo PASSWORD=${{ secrets.P4.PASSWORD }} >> .env
+          echo CLIENT_ID=${{ secrets.P4.CLIENT_ID }} >> .env
           cat .env
       - name: Tox run 
         run: tox run-parallel
