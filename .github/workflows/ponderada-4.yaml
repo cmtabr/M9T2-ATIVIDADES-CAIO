@@ -33,11 +33,11 @@ jobs:
           python -m pip install tox tox-gh-actions
       - name: Tox run 
         env:
-          BROKER: ${{ secrets.P4.BROKER }}
-          PORT: ${{ secrets.P4.PORT }}
-          TOPIC: ${{ secrets.P4.TOPIC }}
-          QOS: ${{ secrets.P4.QOS }}
-          USER: ${{ secrets.P4.PROFILE }}
-          PASSWORD: ${{ secrets.P4.PASSWORD }}
-          CLIENT_ID: ${{ secrets.P4.CLIENT_ID }}
+          BROKER: ${{ secrets.P4_BROKER }}
+          PORT: ${{ secrets.P4_PORT }}
+          TOPIC: ${{ secrets.P4_TOPIC }}
+          QOS: ${{ secrets.P4_QOS }}
+          USER: ${{ secrets.P4_PROFILE }}
+          PASSWORD: ${{ secrets.P4_PASSWORD }}
+          CLIENT_ID: ${{ secrets.P4_CLIENT_ID }}
         run: tox run-parallel
