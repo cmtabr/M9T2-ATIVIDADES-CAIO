@@ -31,16 +31,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install tox tox-gh-actions
-      - name: Temp .env file
-        run: |
-          touch .env
-          echo BROKER=${{ secrets.P4.BROKER }} >> .env
-          echo PORT=${{ secrets.P4.PORT }} >> .env
-          echo TOPIC=${{ secrets.P4.TOPIC }} >> .env
-          echo QOS=${{ secrets.P4.QOS }} >> .env
-          echo USER=${{ secrets.P4.PROFILE }} >> .env
-          echo PASSWORD=${{ secrets.P4.PASSWORD }} >> .env
-          echo CLIENT_ID=${{ secrets.P4.CLIENT_ID }} >> .env
-          cat .env
       - name: Tox run 
+        env:
+          BROKER: ${{ secrets.P4.BROKER }}
+          PORT: ${{ secrets.P4.PORT }}
+          TOPIC: ${{ secrets.P4.TOPIC }}
+          QOS: ${{ secrets.P4.QOS }}
+          USER: ${{ secrets.P4.PROFILE }}
+          PASSWORD: ${{ secrets.P4.PASSWORD }}
+          CLIENT_ID: ${{ secrets.P4.CLIENT_ID }}
         run: tox run-parallel
