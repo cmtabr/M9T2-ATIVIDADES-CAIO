@@ -1,5 +1,4 @@
 import pytest
-import json
 from mqtt.generator.fake_data import SensorDataGenerator
 
 
@@ -9,8 +8,7 @@ def sensor_data_generator():
 
 
 def test_fake_sensor_data_structure_and_values(sensor_data_generator):
-    result = sensor_data_generator.fake_sensor_data()
-    data = json.loads(result)
+    data = sensor_data_generator.fake_sensor_data()
 
     assert 'name' in data
     assert 'latitude' in data

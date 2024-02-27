@@ -1,3 +1,6 @@
+# import time
+
+
 class Subscriber:
     def __init__(self, client, qos=0):
         self.client = client
@@ -5,7 +8,11 @@ class Subscriber:
 
     def subscribe(self, topic: str):
         self.client.subscribe(topic, self.qos)
-        print(f"Subscribed to {topic} with QoS {self.qos}")
-
-    def on_message(self, client, message: str):
-        return print(message)
+        # Uncomment the next lines to see the subscription information
+        # print(
+        #     f"""Subscription Information:\n
+        #     Topic: {topic}\n
+        #     QoS: {self.qos}\n
+        #     Time: {time.strftime("%H:%M:%S")}
+        #     """
+        # )

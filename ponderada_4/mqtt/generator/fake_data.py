@@ -1,8 +1,7 @@
-import json
 import time
 from faker import Faker
 from faker.providers import BaseProvider
-
+from typing import Any
 from ..sensor.mics6814 import MiCS6814
 
 
@@ -21,7 +20,7 @@ class SensorDataGenerator:
         self.fake = Faker()
         self.fake.add_provider(StarWarsProvider)
 
-    def fake_sensor_data(self) -> str:
+    def fake_sensor_data(self) -> dict[str, Any]:
         sensor_data = MiCS6814(
             name=self.fake.star_wars_character(),
             latitude=self.fake.latitude(),
@@ -49,5 +48,5 @@ class SensorDataGenerator:
                                             right_digits=2
                                         ),
                 }
-            ).model_dump()
-        return json.dumps(sensor_data)
+            ).model_dump(mode='json')
+        return sensor_data
