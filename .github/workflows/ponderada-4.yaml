@@ -40,4 +40,4 @@ jobs:
           TOPIC: ${{ secrets.P4_SECRETS.TOPIC }}
           CLIENT_ID: ${{ secrets.P4_SECRETS.CLIENT_ID }}
           QOS: ${{ secrets.P4_SECRETS.QOS }}
-        run: tox run parallel
+        run: tox run-parallel
