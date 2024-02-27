@@ -33,6 +33,7 @@ jobs:
           python -m pip install tox tox-gh-actions
       - name: Temp .env file
         run: |
+          touch .env
           echo "BROKER=${{ secrets.P4_SECRETS.BROKER }}" >> .env
           echo "PORT=${{ secrets.P4_SECRETS.PORT }}" >> .env
           echo "TOPIC=${{ secrets.P4_SECRETS.TOPIC }}" >> .env
