@@ -7,7 +7,33 @@ on:
     paths:
       - 'ponderada_4/**'
 
+env:
+  P4_BROKER: ${{ secrets.P4_BROKER }}
+  P4_PORT: ${{ secrets.P4_PORT }}
+  P4_QOS: ${{ secrets.P4_QOS }}
+  P4_PROFILE: ${{ secrets.P4_PROFILE }}
+  P4_PASSWORD: ${{ secrets.P4_PASSWORD }}
+  P4_CLIENT_ID: ${{ secrets.P4_CLIENT_ID }}
+  P4_TOPIC: ${{ secrets.P4_TOPIC }}
+
 jobs:
+  create-envfile:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Make envfile
+      uses: SpicyPizza/create-envfile@v2.0
+      with:
+        envkey_BROKER: ${{ secrets.P4_BROKER }}
+        envkey_PORT: ${{ secrets.P4_PORT }}
+        envkey_QOS: ${{ secrets.P4_QOS }}
+        envkey_PROFILE: ${{ secrets.P4_PROFILE }}
+        envkey_PASSWORD: ${{ secrets.P4_PASSWORD }}
+        envkey_CLIENT_ID: ${{ secrets.P4_CLIENT_ID }}
+        envkey_TOPIC: ${{ secrets.P4_TOPIC }}
+        directory: poderada_4/
+        file_name: .env
+        fail_on_empty: false
+        sort_keys: false
   Integration-Tests:
     runs-on: ubuntu-latest
     strategy: 
@@ -33,7 +59,7 @@ jobs:
           python -m pip install tox tox-gh-actions
       - name: Creates temp .env file 
         run: |
-          touch .env
+          touch ./.env
           echo BROKER=${{ secrets.P4_BROKER }} >> .env
           echo PORT=${{ secrets.P4_PORT }} >> .env
           echo TOPIC=${{ secrets.P4_TOPIC }} >> .env
