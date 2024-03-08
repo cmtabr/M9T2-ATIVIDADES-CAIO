@@ -1,0 +1,1 @@
+# Funcionamento do programa
