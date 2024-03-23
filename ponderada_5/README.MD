@@ -36,7 +36,7 @@ docker compose up -d --build --wait
 Para criar os containers do metabase e do postgresql.
 
 ```bash
-cd service 
+cd ponderada_5/service 
 python main.py
 ```
 Para executar a aplicação.
