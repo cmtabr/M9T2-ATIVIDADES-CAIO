@@ -103,7 +103,8 @@ client.loop_start()
 
 i = 0
 
-while i < 9:
+while i < 4:
     publisher.publish(TOPIC, json.dumps(generator.fake_sensor_data()))
     i += 1
-    time.sleep(2)
+
+client.loop_stop()
