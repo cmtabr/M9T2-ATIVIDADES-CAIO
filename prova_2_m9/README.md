@@ -33,6 +33,8 @@ cd generator
 python kafka_producer.py 
 ```
 
+Dessa forma, será possível visualizar o arquivo `database.txt` sendo preenchido com as informações consumidas do Kafka
+
 ## Testes
 Os testes para esta aplicação funcionam do seguinte modo:
 1. 

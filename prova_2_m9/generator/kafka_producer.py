@@ -45,19 +45,19 @@ class KafkaSensorProducer:
         sensor_data = json.dumps(sensor)
         return sensor_data
 
-    # def delivery_callback(self, err, msg):
-    #     if err:
-    #         print(f'Message delivery failed: {err}')
-    #     else:
-    #         print(f'Message delivered to {msg.topic()} [{msg.partition()}]')
+    def delivery_callback(self, err, msg):
+        if err:
+            print(f'Message delivery failed: {err}')
+        else:
+            print(f'Message delivered to {msg.topic()} [{msg.partition()}]')
 
     def produce_messages(self, topic):
         while True:
             message = self.fake_sensor_data()
-            self.producer.produce(topic, message.encode('utf-8')) #, callback=self.delivery_callback
+            self.producer.produce(topic, message.encode('utf-8'), callback=self.delivery_callback)
             self.producer.flush()
             time.sleep(2)
 
 ksp = KafkaSensorProducer(producer_config=producer_config)
 
-ksp.produce_messages(topic = topic)
+ksp.produce_messages(topic=topic)
