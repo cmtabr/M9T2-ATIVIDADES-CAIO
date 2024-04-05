@@ -302,3 +302,603 @@
                     Data: 2024-04-05 10:54:06
                     
 
+
+                    Sensor: Sensor_Ftf-008
+                    Qualidade do Ar (0 à 10): 7.28
+                    Tipo de Poluente: CO2
+                    Grandeza: 356ppm
+                    Data: 2024-04-05 10:54:08
+                    
+
+
+                    Sensor: Sensor_bOb-618
+                    Qualidade do Ar (0 à 10): 8.76
+                    Tipo de Poluente: O3
+                    Grandeza: 760ppm
+                    Data: 2024-04-05 10:54:10
+                    
+
+
+                    Sensor: Sensor_uTB-029
+                    Qualidade do Ar (0 à 10): 1.25
+                    Tipo de Poluente: O3
+                    Grandeza: 842ppm
+                    Data: 2024-04-05 10:54:12
+                    
+
+
+                    Sensor: Sensor_yjE-248
+                    Qualidade do Ar (0 à 10): 3.88
+                    Tipo de Poluente: O3
+                    Grandeza: 328ppm
+                    Data: 2024-04-05 10:54:14
+                    
+
+
+                    Sensor: Sensor_Kyf-449
+                    Qualidade do Ar (0 à 10): 0.5
+                    Tipo de Poluente: CO
+                    Grandeza: 5ppm
+                    Data: 2024-04-05 10:54:16
+                    
+
+
+                    Sensor: Sensor_nTn-983
+                    Qualidade do Ar (0 à 10): 2.6
+                    Tipo de Poluente: O3
+                    Grandeza: 261ppm
+                    Data: 2024-04-05 10:54:18
+                    
+
+
+                    Sensor: Sensor_oPs-378
+                    Qualidade do Ar (0 à 10): 7.5
+                    Tipo de Poluente: NO2
+                    Grandeza: 991ppm
+                    Data: 2024-04-05 10:54:20
+                    
+
+
+                    Sensor: Sensor_ynM-167
+                    Qualidade do Ar (0 à 10): 7.48
+                    Tipo de Poluente: PM2.5
+                    Grandeza: 837ppm
+                    Data: 2024-04-05 10:54:22
+                    
+
+
+                    Sensor: Sensor_Yow-861
+                    Qualidade do Ar (0 à 10): 9.14
+                    Tipo de Poluente: PM2.5
+                    Grandeza: 412ppm
+                    Data: 2024-04-05 10:54:24
+                    
+
+
+                    Sensor: Sensor_toi-096
+                    Qualidade do Ar (0 à 10): 1.9
+                    Tipo de Poluente: NO2
+                    Grandeza: 613ppm
+                    Data: 2024-04-05 10:54:26
+                    
+
+
+                    Sensor: Sensor_GlW-476
+                    Qualidade do Ar (0 à 10): 2.15
+                    Tipo de Poluente: PM10
+                    Grandeza: 468ppm
+                    Data: 2024-04-05 10:54:28
+                    
+
+
+                    Sensor: Sensor_JwD-486
+                    Qualidade do Ar (0 à 10): 4.5
+                    Tipo de Poluente: O3
+                    Grandeza: 518ppm
+                    Data: 2024-04-05 10:54:30
+                    
+
+
+                    Sensor: Sensor_BHb-429
+                    Qualidade do Ar (0 à 10): 8.14
+                    Tipo de Poluente: CO
+                    Grandeza: 34ppm
+                    Data: 2024-04-05 10:54:32
+                    
+
+
+                    Sensor: Sensor_orB-636
+                    Qualidade do Ar (0 à 10): 0.99
+                    Tipo de Poluente: PM10
+                    Grandeza: 648ppm
+                    Data: 2024-04-05 10:54:34
+                    
+
+
+                    Sensor: Sensor_PIB-067
+                    Qualidade do Ar (0 à 10): 4.77
+                    Tipo de Poluente: PM2.5
+                    Grandeza: 645ppm
+                    Data: 2024-04-05 10:54:36
+                    
+
+
+                    Sensor: Sensor_eEb-518
+                    Qualidade do Ar (0 à 10): 5.95
+                    Tipo de Poluente: O3
+                    Grandeza: 244ppm
+                    Data: 2024-04-05 10:54:38
+                    
+
+
+                    Sensor: Sensor_xsI-518
+                    Qualidade do Ar (0 à 10): 1.37
+                    Tipo de Poluente: CO2
+                    Grandeza: 880ppm
+                    Data: 2024-04-05 10:54:40
+                    
+
+
+                    Sensor: Sensor_rKw-061
+                    Qualidade do Ar (0 à 10): 2.45
+                    Tipo de Poluente: NO2
+                    Grandeza: 880ppm
+                    Data: 2024-04-05 10:54:42
+                    
+
+
+                    Sensor: Sensor_RnJ-961
+                    Qualidade do Ar (0 à 10): 4.17
+                    Tipo de Poluente: NO2
+                    Grandeza: 206ppm
+                    Data: 2024-04-05 10:54:44
+                    
+
+
+                    Sensor: Sensor_ThV-355
+                    Qualidade do Ar (0 à 10): 5.85
+                    Tipo de Poluente: PM10
+                    Grandeza: 737ppm
+                    Data: 2024-04-05 10:54:46
+                    
+
+
+                    Sensor: Sensor_Riz-133
+                    Qualidade do Ar (0 à 10): 4.2
+                    Tipo de Poluente: PM10
+                    Grandeza: 896ppm
+                    Data: 2024-04-05 10:54:48
+                    
+
+
+                    Sensor: Sensor_vZL-890
+                    Qualidade do Ar (0 à 10): 6.11
+                    Tipo de Poluente: CO2
+                    Grandeza: 481ppm
+                    Data: 2024-04-05 10:54:50
+                    
+
+
+                    Sensor: Sensor_zUO-020
+                    Qualidade do Ar (0 à 10): 7.36
+                    Tipo de Poluente: PM10
+                    Grandeza: 325ppm
+                    Data: 2024-04-05 10:54:52
+                    
+
+
+                    Sensor: Sensor_gIH-535
+                    Qualidade do Ar (0 à 10): 3.76
+                    Tipo de Poluente: NO2
+                    Grandeza: 947ppm
+                    Data: 2024-04-05 10:54:54
+                    
+
+
+                    Sensor: Sensor_JzZ-161
+                    Qualidade do Ar (0 à 10): 5.9
+                    Tipo de Poluente: O3
+                    Grandeza: 748ppm
+                    Data: 2024-04-05 10:54:56
+                    
+
+
+                    Sensor: Sensor_HlK-402
+                    Qualidade do Ar (0 à 10): 4.34
+                    Tipo de Poluente: PM10
+                    Grandeza: 311ppm
+                    Data: 2024-04-05 10:54:58
+                    
+
+
+                    Sensor: Sensor_qAH-671
+                    Qualidade do Ar (0 à 10): 9.15
+                    Tipo de Poluente: CO
+                    Grandeza: 153ppm
+                    Data: 2024-04-05 10:55:00
+                    
+
+
+                    Sensor: Sensor_kUV-030
+                    Qualidade do Ar (0 à 10): 5.7
+                    Tipo de Poluente: PM10
+                    Grandeza: 302ppm
+                    Data: 2024-04-05 10:55:02
+                    
+
+
+                    Sensor: Sensor_lmr-089
+                    Qualidade do Ar (0 à 10): 0.12
+                    Tipo de Poluente: O3
+                    Grandeza: 265ppm
+                    Data: 2024-04-05 10:55:04
+                    
+
+
+                    Sensor: Sensor_guO-378
+                    Qualidade do Ar (0 à 10): 3.48
+                    Tipo de Poluente: NO2
+                    Grandeza: 8ppm
+                    Data: 2024-04-05 10:55:06
+                    
+
+
+                    Sensor: Sensor_zYA-376
+                    Qualidade do Ar (0 à 10): 3.97
+                    Tipo de Poluente: CO
+                    Grandeza: 59ppm
+                    Data: 2024-04-05 10:55:08
+                    
+
+
+                    Sensor: Sensor_xRB-773
+                    Qualidade do Ar (0 à 10): 2.68
+                    Tipo de Poluente: CO
+                    Grandeza: 401ppm
+                    Data: 2024-04-05 10:55:10
+                    
+
+
+                    Sensor: Sensor_wPl-634
+                    Qualidade do Ar (0 à 10): 0.42
+                    Tipo de Poluente: O3
+                    Grandeza: 507ppm
+                    Data: 2024-04-05 10:55:12
+                    
+
+
+                    Sensor: Sensor_Yxn-575
+                    Qualidade do Ar (0 à 10): 3.9
+                    Tipo de Poluente: PM10
+                    Grandeza: 114ppm
+                    Data: 2024-04-05 10:55:14
+                    
+
+
+                    Sensor: Sensor_pXd-118
+                    Qualidade do Ar (0 à 10): 1.48
+                    Tipo de Poluente: PM10
+                    Grandeza: 841ppm
+                    Data: 2024-04-05 10:55:16
+                    
+
+
+                    Sensor: Sensor_TDp-133
+                    Qualidade do Ar (0 à 10): 4.8
+                    Tipo de Poluente: PM2.5
+                    Grandeza: 446ppm
+                    Data: 2024-04-05 10:55:18
+                    
+
+
+                    Sensor: Sensor_OtS-320
+                    Qualidade do Ar (0 à 10): 5.97
+                    Tipo de Poluente: O3
+                    Grandeza: 662ppm
+                    Data: 2024-04-05 10:55:20
+                    
+
+
+                    Sensor: Sensor_seO-547
+                    Qualidade do Ar (0 à 10): 4.4
+                    Tipo de Poluente: CO2
+                    Grandeza: 997ppm
+                    Data: 2024-04-05 10:55:22
+                    
+
+
+                    Sensor: Sensor_ahz-111
+                    Qualidade do Ar (0 à 10): 7.8
+                    Tipo de Poluente: CO2
+                    Grandeza: 17ppm
+                    Data: 2024-04-05 10:55:24
+                    
+
+
+                    Sensor: Sensor_Jmg-068
+                    Qualidade do Ar (0 à 10): 0.69
+                    Tipo de Poluente: PM2.5
+                    Grandeza: 68ppm
+                    Data: 2024-04-05 10:55:26
+                    
+
+
+                    Sensor: Sensor_BHt-679
+                    Qualidade do Ar (0 à 10): 0.62
+                    Tipo de Poluente: CO2
+                    Grandeza: 887ppm
+                    Data: 2024-04-05 10:55:28
+                    
+
+
+                    Sensor: Sensor_GTn-095
+                    Qualidade do Ar (0 à 10): 4.23
+                    Tipo de Poluente: PM10
+                    Grandeza: 21ppm
+                    Data: 2024-04-05 10:55:30
+                    
+
+
+                    Sensor: Sensor_kEd-940
+                    Qualidade do Ar (0 à 10): 3.95
+                    Tipo de Poluente: PM2.5
+                    Grandeza: 232ppm
+                    Data: 2024-04-05 10:55:32
+                    
+
+
+                    Sensor: Sensor_eEe-702
+                    Qualidade do Ar (0 à 10): 7.48
+                    Tipo de Poluente: CO2
+                    Grandeza: 155ppm
+                    Data: 2024-04-05 10:55:34
+                    
+
+
+                    Sensor: Sensor_sRe-716
+                    Qualidade do Ar (0 à 10): 6.25
+                    Tipo de Poluente: CO
+                    Grandeza: 831ppm
+                    Data: 2024-04-05 10:55:36
+                    
+
+
+                    Sensor: Sensor_jVe-778
+                    Qualidade do Ar (0 à 10): 4.7
+                    Tipo de Poluente: CO2
+                    Grandeza: 514ppm
+                    Data: 2024-04-05 10:55:38
+                    
+
+
+                    Sensor: Sensor_Xah-632
+                    Qualidade do Ar (0 à 10): 7.71
+                    Tipo de Poluente: NO2
+                    Grandeza: 296ppm
+                    Data: 2024-04-05 10:55:40
+                    
+
+
+                    Sensor: Sensor_sGV-830
+                    Qualidade do Ar (0 à 10): 2.6
+                    Tipo de Poluente: O3
+                    Grandeza: 477ppm
+                    Data: 2024-04-05 10:55:42
+                    
+
+
+                    Sensor: Sensor_NpQ-757
+                    Qualidade do Ar (0 à 10): 9.94
+                    Tipo de Poluente: NO2
+                    Grandeza: 391ppm
+                    Data: 2024-04-05 10:55:44
+                    
+
+
+                    Sensor: Sensor_RMP-628
+                    Qualidade do Ar (0 à 10): 3.56
+                    Tipo de Poluente: PM10
+                    Grandeza: 673ppm
+                    Data: 2024-04-05 10:55:46
+                    
+
+
+                    Sensor: Sensor_XPQ-504
+                    Qualidade do Ar (0 à 10): 5.99
+                    Tipo de Poluente: O3
+                    Grandeza: 151ppm
+                    Data: 2024-04-05 10:55:48
+                    
+
+
+                    Sensor: Sensor_kGb-276
+                    Qualidade do Ar (0 à 10): 1.73
+                    Tipo de Poluente: CO
+                    Grandeza: 144ppm
+                    Data: 2024-04-05 10:55:50
+                    
+
+
+                    Sensor: Sensor_bqR-895
+                    Qualidade do Ar (0 à 10): 6.18
+                    Tipo de Poluente: CO2
+                    Grandeza: 261ppm
+                    Data: 2024-04-05 10:55:52
+                    
+
+
+                    Sensor: Sensor_ikQ-675
+                    Qualidade do Ar (0 à 10): 3.9
+                    Tipo de Poluente: O3
+                    Grandeza: 717ppm
+                    Data: 2024-04-05 10:55:54
+                    
+
+
+                    Sensor: Sensor_dYe-381
+                    Qualidade do Ar (0 à 10): 2.98
+                    Tipo de Poluente: PM10
+                    Grandeza: 914ppm
+                    Data: 2024-04-05 10:55:56
+                    
+
+
+                    Sensor: Sensor_Dqg-923
+                    Qualidade do Ar (0 à 10): 9.4
+                    Tipo de Poluente: PM10
+                    Grandeza: 636ppm
+                    Data: 2024-04-05 10:55:58
+                    
+
+
+                    Sensor: Sensor_auR-811
+                    Qualidade do Ar (0 à 10): 5.62
+                    Tipo de Poluente: PM10
+                    Grandeza: 724ppm
+                    Data: 2024-04-05 10:56:00
+                    
+
+
+                    Sensor: Sensor_ehq-388
+                    Qualidade do Ar (0 à 10): 1.71
+                    Tipo de Poluente: CO
+                    Grandeza: 188ppm
+                    Data: 2024-04-05 10:56:02
+                    
+
+
+                    Sensor: Sensor_iqc-270
+                    Qualidade do Ar (0 à 10): 5.54
+                    Tipo de Poluente: CO
+                    Grandeza: 528ppm
+                    Data: 2024-04-05 10:56:04
+                    
+
+
+                    Sensor: Sensor_EOC-044
+                    Qualidade do Ar (0 à 10): 6.44
+                    Tipo de Poluente: NO2
+                    Grandeza: 262ppm
+                    Data: 2024-04-05 10:56:06
+                    
+
+
+                    Sensor: Sensor_BBs-097
+                    Qualidade do Ar (0 à 10): 3.86
+                    Tipo de Poluente: NO2
+                    Grandeza: 744ppm
+                    Data: 2024-04-05 10:56:08
+                    
+
+
+                    Sensor: Sensor_ttw-436
+                    Qualidade do Ar (0 à 10): 7.4
+                    Tipo de Poluente: PM10
+                    Grandeza: 406ppm
+                    Data: 2024-04-05 10:56:10
+                    
+
+
+                    Sensor: Sensor_yeF-919
+                    Qualidade do Ar (0 à 10): 9.36
+                    Tipo de Poluente: NO2
+                    Grandeza: 371ppm
+                    Data: 2024-04-05 10:56:12
+                    
+
+
+                    Sensor: Sensor_ojp-876
+                    Qualidade do Ar (0 à 10): 8.46
+                    Tipo de Poluente: PM10
+                    Grandeza: 288ppm
+                    Data: 2024-04-05 10:56:14
+                    
+
+
+                    Sensor: Sensor_nTQ-524
+                    Qualidade do Ar (0 à 10): 8.87
+                    Tipo de Poluente: PM10
+                    Grandeza: 381ppm
+                    Data: 2024-04-05 10:56:16
+                    
+
+
+                    Sensor: Sensor_erR-950
+                    Qualidade do Ar (0 à 10): 9.57
+                    Tipo de Poluente: O3
+                    Grandeza: 480ppm
+                    Data: 2024-04-05 10:56:19
+                    
+
+
+                    Sensor: Sensor_Kfb-507
+                    Qualidade do Ar (0 à 10): 1.62
+                    Tipo de Poluente: CO
+                    Grandeza: 624ppm
+                    Data: 2024-04-05 10:56:21
+                    
+
+
+                    Sensor: Sensor_DYO-959
+                    Qualidade do Ar (0 à 10): 2.8
+                    Tipo de Poluente: NO2
+                    Grandeza: 707ppm
+                    Data: 2024-04-05 10:56:23
+                    
+
+
+                    Sensor: Sensor_YVt-872
+                    Qualidade do Ar (0 à 10): 4.45
+                    Tipo de Poluente: PM10
+                    Grandeza: 783ppm
+                    Data: 2024-04-05 10:56:25
+                    
+
+
+                    Sensor: Sensor_RRx-948
+                    Qualidade do Ar (0 à 10): 9.8
+                    Tipo de Poluente: CO2
+                    Grandeza: 295ppm
+                    Data: 2024-04-05 10:56:27
+                    
+
+
+                    Sensor: Sensor_tww-466
+                    Qualidade do Ar (0 à 10): 1.69
+                    Tipo de Poluente: CO2
+                    Grandeza: 973ppm
+                    Data: 2024-04-05 10:56:29
+                    
+
+
+                    Sensor: Sensor_qIB-574
+                    Qualidade do Ar (0 à 10): 9.59
+                    Tipo de Poluente: NO2
+                    Grandeza: 140ppm
+                    Data: 2024-04-05 10:56:31
+                    
+
+
+                    Sensor: Sensor_Ohv-393
+                    Qualidade do Ar (0 à 10): 9.53
+                    Tipo de Poluente: CO
+                    Grandeza: 501ppm
+                    Data: 2024-04-05 10:56:33
+                    
+
+
+                    Sensor: Sensor_wcL-480
+                    Qualidade do Ar (0 à 10): 6.84
+                    Tipo de Poluente: NO2
+                    Grandeza: 228ppm
+                    Data: 2024-04-05 10:56:35
+                    
+
+
+                    Sensor: Sensor_Dzt-114
+                    Qualidade do Ar (0 à 10): 9.47
+                    Tipo de Poluente: O3
+                    Grandeza: 33ppm
+                    Data: 2024-04-05 10:56:37
+                    
+
