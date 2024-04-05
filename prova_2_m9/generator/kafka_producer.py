@@ -1,11 +1,8 @@
-from confluent_kafka import Producer, Consumer, KafkaError
+from confluent_kafka import Producer
 import json
-from typing import Any
 import time
 from faker import Faker
 from faker.providers import DynamicProvider
-
-fake = Faker()
 
 # Configurações do produtor
 producer_config = {
@@ -13,48 +10,7 @@ producer_config = {
     'client.id': 'python-producer'
 }
 
-# Criar produtor
-producer = Producer(**producer_config)
-
-# Configurações do gerador
-# pollutant_provider = DynamicProvider(
-#     provider_name="pollutant",
-#     elements=['CO2', 'CO', 'NO2', 'O3', 'PM2.5', 'PM10'],
-# )
-
-# fake.add_provider(pollutant_provider)
-
-# # Gerador de mensagens
-# def fake_sensor_data() -> str:
-#     sensor = {
-#         'name': 'Sensor_' + fake.unique.bothify(text='???-###'),
-#         'pollutant_type': fake.pollutant(),
-#         'air_quality': float(fake.pyfloat(
-#                         min_value=0.05, 
-#                         max_value=10, 
-#                         right_digits=2
-#                     )),
-#         'ppm': fake.pyint(
-#                         min_value=0,
-#                         max_value=1000,
-#                     ),
-#         'date':time.strftime('%Y-%m-%d %H:%M:%S'),
-#     }
-#     sensor_data = json.dumps(sensor)
-#     return sensor_data
-
-# def delivery_callback(err, msg):
-#     if err:
-#         print(f'Message delivery failed: {err}')
-#     else:
-#         print(f'Message delivered to {msg.topic()} [{msg.partition()}]')
-
-# while True:
-#     topic = 'qualidadeAr'
-#     message = fake_sensor_data()
-#     producer.produce(topic, message.encode('utf-8'), callback=delivery_callback)
-#     producer.flush()
-#     time.sleep(2)
+topic = 'qualidadeAr'
 
 pollutant_provider = DynamicProvider(
                                 provider_name="pollutant",
@@ -89,19 +45,19 @@ class KafkaSensorProducer:
         sensor_data = json.dumps(sensor)
         return sensor_data
 
-    def delivery_callback(self, err, msg):
-        if err:
-            print(f'Message delivery failed: {err}')
-        else:
-            print(f'Message delivered to {msg.topic()} [{msg.partition()}]')
+    # def delivery_callback(self, err, msg):
+    #     if err:
+    #         print(f'Message delivery failed: {err}')
+    #     else:
+    #         print(f'Message delivered to {msg.topic()} [{msg.partition()}]')
 
     def produce_messages(self, topic):
         while True:
             message = self.fake_sensor_data()
-            self.producer.produce(topic, message.encode('utf-8'), callback=self.delivery_callback)
+            self.producer.produce(topic, message.encode('utf-8')) #, callback=self.delivery_callback
             self.producer.flush()
             time.sleep(2)
 
-a = KafkaSensorProducer(producer_config=producer_config)
+ksp = KafkaSensorProducer(producer_config=producer_config)
 
-a.produce_messages(topic = 'qualidadeAr')
+ksp.produce_messages(topic = topic)
