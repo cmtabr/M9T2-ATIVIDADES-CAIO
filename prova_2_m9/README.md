@@ -22,6 +22,7 @@ docker compose up -d --build --remove-orphans --force-recreate --wait
 ```
 
 Então, gerando o producer e o consumer em terminais diferentes temos:  
+
 1. 
 ```bash 
 cd generator 
@@ -43,4 +44,8 @@ Os testes para esta aplicação funcionam do seguinte modo:
 
 
 ## Demo
+
+[Gravação de tela de 05-04-2024 10:52:44.webm](https://github.com/cmtabr/M9T2-ATIVIDADES-CAIO/assets/99201276/067ee6e0-108c-437f-bece-fb74e988b80e)
+
+
 
