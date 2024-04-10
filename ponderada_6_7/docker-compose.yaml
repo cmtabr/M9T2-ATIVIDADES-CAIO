@@ -1,0 +1,15 @@
+version: '3.8'
+
+name: integration-flow
+
+services:
+  consumer:
+    build: 
+      context: ./src/consumer_service
+      dockerfile: Dockerfile
+
+  producer:
+    build: 
+      context: ./src/producer_service
+      dockerfile: Dockerfile
+
