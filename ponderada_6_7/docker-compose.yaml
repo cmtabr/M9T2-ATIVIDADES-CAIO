@@ -2,14 +2,21 @@ version: '3.8'
 
 name: integration-flow
 
+networks:
+  integration-flow-network:
+    driver: bridge
+
 services:
   consumer:
     build: 
       context: ./src/consumer_service
       dockerfile: Dockerfile
+    networks:
+      - integration-flow-network
 
   producer:
     build: 
       context: ./src/producer_service
       dockerfile: Dockerfile
-
+    networks:
+      - integration-flow-network
